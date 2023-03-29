@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Happiness</title>
+	<script>
+		function findHappiness(str) {
+			if (str.toLowerCase().includes("happiness")) {
+				return "Hurray!";
+			} else {
+				return "There is no happiness.";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Find Happiness</h1>
+	<p>Result: <span id="result"></span></p>
+	
+	<script>
+		// Call the function and display the result
+		const resultElement = document.getElementById("result");
+		resultElement.innerText = findHappiness("You give me the feeling of happiness");
+	</script>
+</body>
+</html>

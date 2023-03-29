@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Regex Example</title>
+  </head>
+  <body>
+    <p id="result"></p>
+    
+    <script>
+      const str = "Lunch at 10:10 in the room 123:456";
+      const pattern = /\b\d{2}:\d{2}\b/g; // Regex pattern to match time in hh:mm format
+      
+      const matches = str.match(pattern); // Find all matches
+      
+      document.getElementById("result").innerHTML = "Matches: " + matches; // Display the matches
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Double Letters</title>
+</head>
+<body>
+  <script>
+    function doubleLetters(word) {
+      for (let i = 0; i < word.length - 1; i++) {
+        if (word[i] === word[i + 1]) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    console.log(doubleLetters("loop")); // true
+    console.log(doubleLetters("yummy")); // true
+    console.log(doubleLetters("hello")); // true
+    console.log(doubleLetters("hel")); // false
+  </script>
+</body>
+</html>

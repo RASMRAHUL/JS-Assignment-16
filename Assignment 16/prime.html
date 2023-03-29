@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Check if a number is prime using regular expressions</title>
+  </head>
+  <body>
+    <script>
+      function isPrime(number) {
+        // Convert the string to a number
+        const n = Number(number);
+        // Check if the number is less than 2
+        if (n < 2) {
+          return false;
+        }
+        // Create a regular expression that matches numbers with no divisors other than 1 and itself
+        const re = /^1?$|^(11+?)\1+$/;
+        // Use the test method of the regular expression to check if the number matches
+        return re.test("1".repeat(n));
+      }
+
+      // Examples
+      console.log(isPrime("7")); // true
+      console.log(isPrime("134")); // false
+    </script>
+  </body>
+</html>

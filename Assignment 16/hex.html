@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Validate Hex Code</title>
+    <script>
+      function isValidHexCode(code) {
+        const regex = /^#([A-Fa-f0-9]{6})$/; // Use a regular expression to match the code format
+        return regex.test(code); // Test if the code matches the regex pattern
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Validate Hex Code</h1>
+    <p>Enter a hex code:</p>
+    <input type="text" id="code">
+    <button onclick="alert(isValidHexCode(document.getElementById('code').value))">Validate</button>
+  </body>
+</html>

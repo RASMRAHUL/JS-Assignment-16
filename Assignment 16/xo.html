@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XO Function Example</title>
+  </head>
+  <body>
+    <input id="input-string" type="text">
+    <button onclick="checkXO()">Check XO</button>
+    <p id="result"></p>
+
+    <script>
+      function XO(string) {
+        // function definition goes here
+      }
+
+      function checkXO() {
+        var inputString = document.getElementById("input-string").value;
+        var resultElement = document.getElementById("result");
+        var result = XO(inputString);
+        resultElement.textContent = result ? "True" : "False";
+      }
+    </script>
+  </body>
+</html>
